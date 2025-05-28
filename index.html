@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Election Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="nav-container">
+            <div class="logo">Student Election Portal</div>
+            <div id="navLinks" class="nav-links">
+                <!-- Navigation links will be generated dynamically -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Container for all pages -->
+    <div class="container">
+        <!-- Login Page -->
+        <div id="loginPage" class="page active-page">
+            <div class="login-form">
+                <h2>Login</h2>
+                <div id="loginMessage"></div>
+                <div class="form-group">
+                    <label for="username">Student ID</label>
+                    <input type="text" id="username" placeholder="Enter your student ID">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="login-buttons">
+                    <button id="loginBtn">Login</button>
+                    <button id="demoLoginBtn">Demo Login</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About Page -->
+        <div id="aboutPage" class="page">
+            <h1>About the Student Election</h1>
+            <div class="info-section">
+                <h2>Election Overview</h2>
+                <p>Welcome to the Student Council Elections for the academic year 2023-2024. This platform allows students to participate in a democratic process to elect their representatives for various positions in the Student Council.</p>
+                <p>The elected council members will represent the student body in various academic and administrative matters, organize campus events, and work towards improving student life on campus.</p>
+            </div>
+            <div class="info-section">
+                <h2>Important Dates</h2>
+                <p><strong>Nomination Period:</strong> June 1 - June 10, 2023</p>
+                <p><strong>Campaign Period:</strong> June 11 - June 20, 2023</p>
+                <p><strong>Voting Period:</strong> June 21 - June 23, 2023</p>
+                <p><strong>Results Announcement:</strong> June 24, 2023</p>
+            </div>
+            <div class="info-section">
+                <h2>Contact Information</h2>
+                <p>For any queries regarding the election process, please contact:</p>
+                <p><strong>Election Committee:</strong> election.committee@university.edu</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+            </div>
+        </div>
+        
+        <!-- Rules Page -->
+        <div id="rulesPage" class="page">
+            <h1>Election Rules & Guidelines</h1>
+            <div class="info-section">
+                <h2>Eligibility Criteria</h2>
+                <div class="rule-item">All candidates must be currently enrolled students with a minimum GPA of 2.5.</div>
+                <div class="rule-item">Candidates must not have any pending disciplinary actions against them.</div>
+                <div class="rule-item">Candidates must be available for the entire academic year.</div>
+                <div class="rule-item">Only students who have completed at least one semester at the university are eligible to contest.</div>
+            </div>
+            <div class="info-section">
+                <h2>Campaign Rules</h2>
+                <div class="rule-item">Campaigning is only allowed during the designated campaign period.</div>
+                <div class="rule-item">No defamatory or offensive content is allowed in campaign materials.</div>
+                <div class="rule-item">Campaign expenses must not exceed $200, and receipts must be submitted to the Election Committee.</div>
+                <div class="rule-item">No campaigning is allowed within 50 feet of voting stations on election days.</div>
+                <div class="rule-item">Use of university resources for campaign purposes must be pre-approved by the Election Committee.</div>
+            </div>
+            <div class="info-section">
+                <h2>Voting Rules</h2>
+                <div class="rule-item">Each student is entitled to one vote per position.</div>
+                <div class="rule-item">Students must present their valid student ID to vote.</div>
+                <div class="rule-item">Proxy voting is not allowed under any circumstances.</div>
+                <div class="rule-item">Any attempt to manipulate the voting process will result in disqualification and disciplinary action.</div>
+            </div>
+            <div class="info-section">
+                <h2>Election Code of Conduct</h2>
+                <div class="rule-item">All candidates and their supporters must maintain decorum and respect throughout the election process.</div>
+                <div class="rule-item">Any complaints regarding violations must be submitted in writing to the Election Committee within 24 hours of the incident.</div>
+                <div class="rule-item">The decision of the Election Committee in all matters related to the election shall be final.</div>
+            </div>
+        </div>
+        
+        <!-- Registration Page -->
+        <div id="registrationPage" class="page">
+            <h1>Candidate Registration</h1>
+            <div id="registrationMessage"></div>
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" placeholder="Enter your student ID">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <select id="position">
+                        <option value="">Select a position</option>
+                        <option value="President">President</option>
+                        <option value="Vice President">Vice President</option>
+                        <option value="Secretary">Secretary</option>
+                        <option value="Treasurer">Treasurer</option>
+                        <option value="Events Coordinator">Events Coordinator</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year of Study</label>
+                    <select id="year">
+                        <option value="">Select your year</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                        <option value="5th Year">5th Year</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="manifesto">Manifesto / Statement</label>
+                    <textarea id="manifesto" rows="5" placeholder="Share your vision and goals..."></textarea>
+                </div>
+                <button id="registerBtn">Register as Candidate</button>
+            </div>
+        </div>
+        
+        <!-- Profiles Page -->
+        <div id="profilesPage" class="page">
+            <h1>Candidate Profiles</h1>
+            <div class="form-group">
+                <label for="positionFilter">Filter by Position</label>
+                <select id="positionFilter">
+                    <option value="All">All Positions</option>
+                    <option value="President">President</option>
+                    <option value="Vice President">Vice President</option>
+                    <option value="Secretary">Secretary</option>
+                    <option value="Treasurer">Treasurer</option>
+                    <option value="Events Coordinator">Events Coordinator</option>
+                </select>
+            </div>
+            <div id="candidateCards" class="candidate-cards">
+                <!-- Candidate cards will be generated dynamically -->
+            </div>
+        </div>
+        
+        <!-- Voting Page -->
+        <div id="votingPage" class="page">
+            <h1>Cast Your Vote</h1>
+            <div id="votingMessage"></div>
+            <div id="positionSections">
+                <!-- Position sections will be generated dynamically -->
+            </div>
+            <button id="submitVotesBtn" style="margin-top: 20px;">Submit Votes</button>
+        </div>
+        
+        <!-- Results Page -->
+        <div id="resultsPage" class="page">
+            <h1>Election Results</h1>
+            <div id="resultsSections">
+                <!-- Results sections will be generated dynamically -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
