@@ -1,4 +1,4 @@
-// Application state
+
 const appState = {
     currentUser: null,
     isAdmin: false,
@@ -6,14 +6,14 @@ const appState = {
     votes: {}
 };
 
-// Sample users for demonstration
+
 const users = [
     { id: 'admin', password: 'admin123', name: 'Admin User', role: 'admin' },
     { id: 'S12345', password: 'pass123', name: 'John Doe', role: 'student' },
     { id: 'S67890', password: 'pass456', name: 'Jane Smith', role: 'student' }
 ];
 
-// Initialize the application when the DOM is loaded
+
 document.addEventListener('DOMContentLoaded', function() {
     // Load data from localStorage
     loadFromLocalStorage();
@@ -35,17 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Student Election Portal initialized');
 });
 
-// Helper functions
 function showPage(pageId) {
-    // Hide all pages
-    document.querySelectorAll('.page').forEach(page => {
+
+	document.querySelectorAll('.page').forEach(page => {
         page.classList.remove('active-page');
     });
     
-    // Show the selected page
+    
     document.getElementById(pageId).classList.add('active-page');
     
-    // Update navigation highlighting
+    
     updateNavHighlighting(pageId);
 }
 
@@ -68,14 +67,12 @@ function showMessage(elementId, message, isError = false) {
 }
 
 function loadFromLocalStorage() {
-    // Load candidates
-    const storedCandidates = localStorage.getItem('candidates');
+        const storedCandidates = localStorage.getItem('candidates');
     if (storedCandidates) {
         appState.candidates = JSON.parse(storedCandidates);
     }
     
-    // Load votes
-    const storedVotes = localStorage.getItem('votes');
+      const storedVotes = localStorage.getItem('votes');
     if (storedVotes) {
         appState.votes = JSON.parse(storedVotes);
     }
