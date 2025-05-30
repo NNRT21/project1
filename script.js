@@ -1,4 +1,4 @@
-// Application state
+
 const appState = {
     currentUser: null,
     isAdmin: false,
