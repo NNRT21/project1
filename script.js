@@ -1,4 +1,4 @@
-// Application state
+
 const appState = {
     currentUser: null,
     isAdmin: false,
@@ -6,14 +6,14 @@ const appState = {
     votes: {}
 };
 
-// Sample users for demonstration
+
 const users = [
     { id: 'admin', password: 'admin123', name: 'Admin User', role: 'admin' },
     { id: 'S12345', password: 'pass123', name: 'John Doe', role: 'student' },
     { id: 'S67890', password: 'pass456', name: 'Jane Smith', role: 'student' }
 ];
 
-// Initialize the application when the DOM is loaded
+
 document.addEventListener('DOMContentLoaded', function() {
     // Load data from localStorage
     loadFromLocalStorage();
