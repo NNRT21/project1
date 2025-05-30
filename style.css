@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -29,7 +29,7 @@ button:hover {
     background-color: #3367d6;
 }
 
-/* Navigation styles */
+
 .nav {
     background-color: #333;
     padding: 15px 0;
@@ -67,7 +67,7 @@ button:hover {
     color: #4285f4;
 }
 
-/* Page styles */
+
 .page {
     display: none;
     padding: 20px 0;
@@ -82,7 +82,7 @@ h1, h2, h3 {
     color: #333;
 }
 
-/* Login page styles */
+
 .login-form {
     max-width: 400px;
     margin: 50px auto;
