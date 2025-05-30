@@ -15,16 +15,16 @@ const users = [
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Load data from localStorage
+    
     loadFromLocalStorage();
     
-    // Set up event handlers
+    
     setupLogin();
     setupRegistration();
     setupProfilesFilter();
     setupVoting();
     
-    // Initialize navigation
+ 
     setupNavigation();
     
     // Initialize pages
